@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NovaTech | Smart IT Solutions</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">NovaTech</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Company</a></li>
+        <li><a href="#services">Solutions</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="hamburger" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <h1>Smart. Secure. Scalable.</h1>
+        <p>Empowering Businesses with Smart IT Solutions</p>
+        <div class="cta-container">
+          <a href="#contact" class="cta-button primary">Get Support</a>
+          <a href="#services" class="cta-button secondary">Our Services</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about-us">
+      <div class="section-header">
+        <h2>About NovaTech</h2>
+        <p>Redefining IT Solutions</p>
+      </div>
+      <div class="about-content">
+        <img src="team.jpg" alt="Team" />
+        <div class="about-text">
+          <p>We specialize in scalable, secure, and innovative IT services tailored for modern businesses. From startups to enterprises, we’ve helped over 100 clients worldwide stay ahead in the digital game.</p>
+          <ul>
+            <li><i class="fas fa-check"></i> 99.9% Server Uptime</li>
+            <li><i class="fas fa-check"></i> 24/7 Client Support</li>
+            <li><i class="fas fa-check"></i> Trusted by 100+ Clients</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="our-services">
+      <div class="section-header">
+        <h2>Our Solutions</h2>
+        <p>IT services that grow with your business</p>
+      </div>
+      <div class="services-container">
+        <div class="service-card">
+          <i class="fas fa-cloud"></i>
+          <h3>Cloud Solutions</h3>
+          <p>Deploy, scale and manage apps on secure cloud infrastructure.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-shield-alt"></i>
+          <h3>Cybersecurity</h3>
+          <p>Protect your business with our proactive security framework.</p>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-cogs"></i>
+          <h3>Managed IT</h3>
+          <p>Focus on your goals—we'll take care of your technology.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="section-header">
+        <h2>Let's Connect</h2>
+        <p>Have a project or need support? Reach out.</p>
+      </div>
+      <div class="contact-container">
+        <form class="contact-form">
+          <input type="text" placeholder="Full Name" required />
+          <input type="email" placeholder="Email Address" required />
+          <textarea placeholder="How can we help?" rows="5" required></textarea>
+          <button type="submit" class="cta-button primary">Contact Now</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Get in Touch</h4>
+        <p><i class="fas fa-map-marker-alt"></i> 456 Nova Street, Pune, India</p>
+        <p><i class="fas fa-phone"></i> +91 9876543210</p>
+        <p><i class="fas fa-envelope"></i> hello@novatech.com</p>
+      </div>
+      <div class="footer-section">
+        <h4>Follow Us</h4>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

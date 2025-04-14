@@ -1,0 +1,258 @@
+
+:root {
+  --primary: #3f3d56;
+  --secondary: #a18cd1;
+  --accent: #fbc2eb;
+  --light: #ffffff;
+  --muted: #fdfbfb;
+  --text: #4a4a4a;
+  --shadow: rgba(0, 0, 0, 0.05);
+  --radius: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: var(--muted);
+  color: var(--text);
+  line-height: 1.8;
+}
+
+.navbar {
+  background-color: var(--light);
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 10px var(--shadow);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--secondary);
+  text-decoration: none;
+ 
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 500;
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--radius);
+  transition: background 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: var(--accent);
+  color: var(--light);
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+header {
+  background: linear-gradient(to right, var(--secondary), var(--accent));
+  color: var(--light);
+  text-align: center;
+  padding: 6rem 2rem;
+  border-bottom-left-radius: 80px;
+}
+
+header h1 {
+  font-size: 3rem;
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin: 4rem 0 2rem;
+  color: var(--primary);
+}
+
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.profile-img {
+  max-width: 350px;
+  /* border-radius: 50%; */
+  box-shadow: 0 8px 25px var(--shadow);
+}
+
+.bio {
+  flex: 1;
+  font-size: 1rem;
+}
+
+.skills-grid, .projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.skill-card, .project-card {
+  background-color: var(--light);
+  padding: 2rem;
+  border-radius: var(--radius);
+  box-shadow: 0 10px 30px var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.skill-card:hover, .project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 30px rgba(0,0,0,0.08);
+}
+
+.project-image img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.contact-container {
+  text-align: center;
+  padding: 2rem;
+}
+
+.download-resume-btn {
+  background: var(--secondary);
+  color: var(--light);
+  padding: 0.75rem 2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 2rem;
+  transition: background 0.3s ease;
+}
+
+.download-resume-btn:hover {
+  background: var(--accent);
+}
+
+.contact-form {
+  display: grid;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+input, textarea {
+  padding: 1rem;
+  border-radius: var(--radius);
+  border: 1px solid #ddd;
+  font-size: 1rem;
+}
+
+button[type="submit"] {
+  background: var(--secondary);
+  color: white;
+  border: none;
+  padding: 1rem;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background: var(--accent);
+}
+
+footer {
+  background: var(--primary);
+  color: var(--light);
+  text-align: center;
+  padding: 3rem 1rem;
+  border-top-right-radius: 80px;
+}
+
+.footer-links a {
+  color: var(--light);
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: var(--accent);
+}
+
+.social-icons {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.social-icons a {
+  color: var(--light);
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: var(--accent);
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .menu-toggle {
+    display: block;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: var(--light);
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 100%;
+    padding: 1rem;
+  }
+  .nav-links.active {
+    display: flex;
+  }
+}
